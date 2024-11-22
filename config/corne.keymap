@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -25,9 +25,11 @@
 &kp LSHFT   &kp Z           &kp X           &kp C        &kp V            &kp B                 &kp N      &kp M            &kp COMMA            &kp DOT         &kp FSLH            &kp RIGHT_BRACE
                                             &mo 1        &kp DELETE       &mt LEFT_SHIFT TAB    &kp SPACE  &kp ENTER        &mo 2
             >;
+
+            label = "base";
         };
 
-        num {
+        lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -40,9 +42,11 @@
 &kp F1         &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &kp F7            &kp F8        &kp F9      &kp F10     &kp F11     &kp F12
                                            &trans        &kp LEFT_META  &sl 3         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RALT
             >;
+
+            label = "num";
         };
 
-        nav {
+        raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -55,6 +59,8 @@
 &kp LSHFT  &trans    &trans  &trans    &trans          &trans              &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC   &kp PIPE  &kp TILDE
                              &kp LGUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL    &kp RET    &trans     &trans
             >;
+
+            label = "nav";
         };
 
         ctrl {
