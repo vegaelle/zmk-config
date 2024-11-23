@@ -9,6 +9,28 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <10 9>;
+        };
+    };
+
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <36 37 38 39 40 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,9 +42,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q           &kp W           &kp E        &kp R            &kp T                 &kp Y      &kp U            &kp I                &kp O           &kp P               &kp LEFT_BRACE
+&kp TAB     &kp Q           &kp W           &kp E        &kp R            &kp T                 &kp Y      &kp U            &kp I                &kp O           &kp P               &kp LBKT
 &kp ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt RIGHT_ALT F  &kp G                 &kp H      &mt RIGHT_ALT J  &mt RIGHT_CONTROL K  &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT   &kp Z           &kp X           &kp C        &kp V            &kp B                 &kp N      &kp M            &kp COMMA            &kp DOT         &kp FSLH            &kp RIGHT_BRACE
+&kp LSHFT   &kp Z           &kp X           &kp C        &kp V            &kp B                 &kp N      &kp M            &kp COMMA            &kp DOT         &kp FSLH            &kp RBKT
                                             &mo 1        &kp BACKSPACE    &mt LEFT_SHIFT TAB    &kp SPACE  &kp ENTER        &mo 2
             >;
 
