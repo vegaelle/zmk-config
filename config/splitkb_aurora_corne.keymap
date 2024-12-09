@@ -16,6 +16,16 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <10 9>;
         };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <37 17>;
+        };
+
+        menu {
+            bindings = <&kp K_MENU>;
+            key-positions = <25 26 28 27>;
+        };
     };
 
     behaviors {
