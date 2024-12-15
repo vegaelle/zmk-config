@@ -58,7 +58,7 @@
                                               &mo 1         &kp BACKSPACE     &mt LEFT_SHIFT TAB    &kp ENTER  &kp SPACE         &mo 2
             >;
 
-            label = "base";
+            label = "jaaj";
         };
 
         lower_layer {
@@ -75,7 +75,7 @@
                                            &trans        &kp LEFT_META  &sl 3         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RALT
             >;
 
-            label = "num";
+            label = "acab";
         };
 
         raise_layer {
@@ -92,10 +92,10 @@
                                                      &kp LGUI        &kp LEFT_SHIFT   &kp LEFT_CONTROL    &kp RET   &trans     &trans
             >;
 
-            label = "nav";
+            label = "queer";
         };
 
-        ctrl {
+        vgnbtw {
             bindings = <
 &bt BT_CLR_ALL  &none         &none         &none         &none         &sys_reset      &none  &none  &none  &none  &none  &none
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
