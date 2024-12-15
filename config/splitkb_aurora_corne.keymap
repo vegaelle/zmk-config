@@ -16,16 +16,23 @@
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <10 9>;
+            layers = <0>;
         };
 
         del {
             bindings = <&kp DELETE>;
             key-positions = <37 17>;
+            layers = <0>;
         };
 
         menu {
             bindings = <&kp K_MENU>;
             key-positions = <25 26 28 27>;
+        };
+
+        repeat {
+            bindings = <&key_repeat>;
+            key-positions = <31 32 33 34>;
         };
     };
 
