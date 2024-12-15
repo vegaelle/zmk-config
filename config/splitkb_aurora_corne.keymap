@@ -86,9 +86,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mwh SCROLL_UP    &mkp MB4           &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5            &kp HOME  &kp PG_UP  &kp UP      &kp PG_DN  &kp PRINTSCREEN  &none
-&msc SCROLL_LEFT  &msc SCROLL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans              &kp END   &kp LEFT   &kp DOWN    &kp RIGHT  &none            &none
-&mwh SCROLL_DOWN  &trans             &trans          &mkp MCLK       &trans           &trans              &kp CAPS  &none      &kp C_MENU  &none      &none            &none
+&msc SCRL_UP      &mkp MB4           &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5            &kp HOME  &kp PG_UP  &kp UP      &kp PG_DN  &kp PRINTSCREEN  &none
+&msc SCRL_LEFT    &msc SCRL_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans              &kp END   &kp LEFT   &kp DOWN    &kp RIGHT  &none            &none
+&msc SCRL_DOWN    &trans             &trans          &mkp MCLK       &trans           &trans              &kp CAPS  &none      &kp C_MENU  &none      &none            &none
                                                      &kp LGUI        &kp LEFT_SHIFT   &kp LEFT_CONTROL    &kp RET   &trans     &trans
             >;
 
