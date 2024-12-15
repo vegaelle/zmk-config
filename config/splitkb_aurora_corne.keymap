@@ -86,10 +86,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&msc SCRL_UP      &mkp MB4           &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5            &kp HOME  &kp PG_UP  &kp UP      &kp PG_DN  &kp PRINTSCREEN  &none
-&msc SCRL_LEFT    &msc SCRL_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans              &kp END   &kp LEFT   &kp DOWN    &kp RIGHT  &none            &none
-&msc SCRL_DOWN    &trans             &trans          &mkp MCLK       &trans           &trans              &kp CAPS  &none      &kp C_MENU  &none      &none            &none
-                                                     &kp LGUI        &kp LEFT_SHIFT   &kp LEFT_CONTROL    &kp RET   &trans     &trans
+&msc SCRL_UP    &mkp MB4         &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5            &kp HOME  &kp PG_UP  &kp UP      &kp PG_DN  &kp PRINTSCREEN  &none
+&msc SCRL_LEFT  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans              &kp END   &kp LEFT   &kp DOWN    &kp RIGHT  &none            &none
+&msc SCRL_DOWN  &trans           &trans          &mkp MCLK       &trans           &trans              &kp CAPS  &none      &kp C_MENU  &none      &none            &none
+                                                 &kp LGUI        &kp LEFT_SHIFT   &kp LEFT_CONTROL    &kp RET   &trans     &trans
             >;
 
             label = "queer";
@@ -97,7 +97,7 @@
 
         vgnbtw {
             bindings = <
-&bt BT_CLR_ALL  &none         &none         &none         &none         &sys_reset      &none  &none  &none  &none  &none  &none
+&bt BT_CLR_ALL  &none         &none         &none         &bootloader   &sys_reset      &none  &none  &none  &none  &none  &none
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &none           &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                             &none         &none         &none           &none  &none  &none
