@@ -4,11 +4,14 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -35,6 +38,18 @@
             bindings = <&key_repeat>;
             key-positions = <31 32 33 34>;
         };
+
+        gaming_layer {
+            bindings = <&to 4>;
+            key-positions = <11 23 35>;
+            layers = <0>;
+        };
+
+        exit_gaming {
+            bindings = <&to 0>;
+            key-positions = <11 23 35>;
+            layers = <4>;
+        };
     };
 
     behaviors {
@@ -60,10 +75,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q            &kp W            &kp E         &kp R             &kp T                 &kp Y      &kp U             &kp I                 &kp O            &kp P                &kp LBKT
-&kp ESCAPE  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D  &HRM RIGHT_ALT F  &kp G                 &kp H      &HRM RIGHT_ALT J  &HRM RIGHT_CONTROL K  &HRM LEFT_ALT L  &HRM RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT   &kp Z            &kp X            &kp C         &kp V             &kp B                 &kp N      &kp M             &kp COMMA             &kp DOT          &kp FSLH             &kp RBKT
-                                              &mo 1         &kp BACKSPACE     &mt LEFT_SHIFT TAB    &kp ENTER  &kp SPACE         &mo 2
+&kp TAB     &kp Q            &kp W            &kp E         &kp R             &kp T                 &kp Y                &kp U             &kp I                 &kp O            &kp P                &kp LBKT
+&kp ESCAPE  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D  &HRM RIGHT_ALT F  &kp G                 &kp H                &HRM RIGHT_ALT J  &HRM RIGHT_CONTROL K  &HRM LEFT_ALT L  &HRM RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT   &kp Z            &kp X            &kp C         &kp V             &kp B                 &kp N                &kp M             &kp COMMA             &kp DOT          &kp FSLH             &kp RBKT
+                                              &mo 1         &kp BACKSPACE     &mt LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &kp SPACE         &mo 2
             >;
 
             label = "jaaj";
@@ -112,6 +127,24 @@
             >;
 
             label = "vgnbtw";
+        };
+
+        gaming {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E  &kp R     &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&kp ESC    &kp A  &kp S  &kp D  &kp F     &kp G        &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V     &kp B        &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &mo 5  &kp BSPC  &kp LCTRL    &kp ENTER  &kp SPACE  &kp RCTRL
+            >;
+        };
+
+        gaming2 {
+            bindings = <
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
+&trans  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5        &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp F11
+&trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F12
+                                &trans      &trans      &trans        &trans      &trans      &trans
+            >;
         };
     };
 };
